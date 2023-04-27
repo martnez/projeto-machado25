@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,300;1,200&display=swap');
+
+
+/* 
+#9AFD56
+#56E34D
+#61FA84
+#4DE39B
+#87EDD0
+*/
+
+:root{
+    --cor1:#9AFD56;
+    --cor2:#56E34D;
+    --cor3:#61FA84;
+    --cor4:#4DE39B;
+    --cor5:#87EDD0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor1);
+
+    font-family: 'Chivo Mono', monospace;
+
+    text-align: center;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5)) ;/*direção, 1 cor, 2 cor*/
+    min-height: 90px;/*altura mínima*/
+    text-align: center;/*alinhamento do texto*/
+    padding-top: 50px;/*espaçamento superior*/
+
+}
+
+header > h1{
+
+    color: black;
+    font-weight: 900px;/*peso da fonte, espessura do negrito*/
+    margin-bottom: 20px;/*Espaço até o próximo elemento, no caso o inferior*/
+
+}
+
+
+header > p{
+    color: red
+}
+
+
+header p{
+    color: blue;
+}
+
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px;/*mesmo espaçamento para os 4 lados*/
+    box-shadow: -1px 1px 5px 1px black;/*extensão de desfoque*/
+}
+
+nav > a{
+    color: black;
+    padding: 10px;
+    text-decoration: none;/*Sublinhado, none, overline, underline*/
+    font-weight: bold;
+    border-radius: 3px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor4);
+    color: blueviolet;
+    
+}
+
+main{
+    background-color: beige;
+    min-width: 320px;/*largura mínima*/
+    max-width: 1000px;/*largura máxima*/
+    margin: auto;/* utilizada aqui para centralizar o elemento*/
+    margin-top: 5px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 3px 2px 5px 0px;
+    text-align: center;
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--cor5), transparent );
+    text-align: center;/*alinhamento de texto:center, left, right, justify*/
+}
+
+main p{
+    font-size: 18px;
+    text-align: justify;/*Alinhamento de texto: center, left, right, justify*/
+    text-indent: 40px;
+    margin: 15px 0 15px 0;/*fora do elemento, 15px(top,bottom) 0(left, right)*/
+    line-height: 1.5em;/*Altura da linha*/
+}
+
+img{
+    width: 50%;
+    border: 10px double black;/*borda: espessura estilo cor*/
+}
+
+figcaption{
+    font-size: 12px;
+}
+
+aside{
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 5px;
+}
+aside > ul{
+    list-style-position: inside;/*coloca os marcadores da lista dentro do elemento*/
+    text-align: justify;
+}
+
+aside > h3{
+    background-color: #61FA84;
+    padding: 10px;
+    margin: -15px -10px 0px -10px
+}
+
+iframe{
+    margin-bottom: 20px;
+}
+
+footer{
+    font-size: 12px;/*background-color, color*/
+    text-align: center;
+    padding: 3px;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
